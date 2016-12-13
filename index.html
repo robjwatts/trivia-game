@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+   <head>
+      <title>Home Alone 2: Trivia</title>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   </head>
+   <body>
+      <div class="container">
+         <div class="jumbotron">
+            <div class="row">
+               <div class = "col-md-12">
+                  <h1 class="headingSection">Trivia!</h1>
+                  <button id="startButton" type="btn btn-primary">Start</button>
+                  <p>Time: <span id="time"></span></p>
+               </div>
+            </div>
+         </div>
+
+         <div class="question">
+            <div class="row">
+               <div class="col-md-6">
+                  <h2>Where was the McCallister family headed for their Christmas vaction in the film?</h2>
+                  <div class="answers">
+                     <form>
+						<div id="wrongAnswer">	
+                        <label class="radio-inline" >
+                        <input type="radio" name="optradio">France
+                        </label>
+                        </div>
+
+						<div id="wrongAnswer">
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">Chicago
+                        </label>
+                        </div>
+
+						<div id="rightAnswer">	
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">Florida
+                        </label>
+                        </div>
+
+						<div id="wrongAnswer">
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">New York
+                        </label>
+                        </div>
+
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="question">
+            <div class="row">
+               <div class="col-md-6">
+                  <h2>Who did the score for the film?</h2>
+                  <div class="answers">
+                     <form>
+						<div id="wrongAnswer">
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">John Hughes
+                        </label>
+                        </div>
+
+						<div id="wrongAnswer">	
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">Danny Elfman
+                        </label>
+                        </div>
+		
+						<div id="wrongAnswer">
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">Chris Columbus
+                        </label>
+                        </div>
+						
+						<div id="rightAnswer">
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">John Williams
+                        </label>
+                        </div>
+
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="question">
+            <div class="row">
+               <div class="col-md-6">
+                  <h2>What hotel does Kevin McCallister stay at when he's 'Lost in New York'?</h2>
+                  <div class="answers">
+                     <form>
+
+						<div id="wrongAnswer">
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">Four Seasons
+                        </label>
+                        </div>
+	
+
+						<div id="rightAnswer">
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">Plaza Hotel
+                        </label>
+                        </div>
+
+
+						<div id="wrongAnswer">
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">The W
+                        </label>
+                        </div>
+		
+						<div id="wrongAnswer">
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">Holiday Inn Express
+                        </label>
+                        </div>
+
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="question">
+            <div class="row">
+               <div class="col-md-6">
+                  <h2>True or False: the film is a shameless repeat of the first, more successful movie. </h2>
+                  <div class="answers">
+                     <form>
+
+						<div id="rightAnswer">
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">True
+                        </label>
+                        </div>
+
+						<div id="wrongAnswer">
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">False
+                        </label>
+                        </div>
+
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="question">
+            <div class="row">
+               <div class="col-md-6">
+                  <h2>Who directed Home Alone 2: Lost in New York?</h2>
+                  <div class="answers">
+                     <form>
+
+						<div id="wrongAnswer">
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">John Williams 
+                        </label>
+                        </div>
+
+
+						<div id="rightAnswer">
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">Chris Columbus
+                        </label>
+                        </div>
+
+						<div id="wrongAnswer">
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">Joe Pesci
+                        </label>
+                        </div>
+
+						<div id="wrongAnswer">
+                        <label class="radio-inline">
+                        <input type="radio" name="optradio">Macaulay Culkin
+                        </label>
+                        </div>
+
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         			<div class="row">
+         			<div class="col-md-12">
+         			<button id="tallyScore" type="btn btn-primary">See my score!</button>
+         			</div>
+         			</div>
+         			</div>
+
+
+      </div>
+		
+      <script src="game.js"></script>
+
+   </body>
+</html>

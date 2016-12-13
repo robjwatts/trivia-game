@@ -1,0 +1,38 @@
+body {
+	background-image:url(../assets/images/background.jpg);
+	background-repeat: repeat;
+}
+
+
+.headingSection {
+	text-align: center;
+}
+
+.startButton {
+	float:center;
+}
+
+.jumbotron {
+	background-color: #999999 !important;
+	
+}
+
+h1 {
+	color: white !important;
+}
+
+.question {
+	background-color: #999999; 
+	padding-left: 30px;
+	color: white;
+	
+}
+p {
+	color: white;
+}
+
+#tallyScore {
+	float: none;
+	
+}
+
