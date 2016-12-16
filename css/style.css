@@ -1,29 +1,36 @@
 body {
-	background-image:url(../assets/images/background.jpg);
+	background-image:url(../assets/images/woof.jpeg);
 	background-repeat: repeat;
 }
 
 
 .headingSection {
 	text-align: center;
+	font-family: 'Slabo 27px', serif;
 }
 
 .startButton {
 	float:center;
+	font-family: 'Slabo 27px', serif;
 }
 
 .jumbotron {
-	background-color: #999999 !important;
+	background-color:rgba(0, 0, 0, 0.5) !important ;
+	font-family: 'Slabo 27px', serif;
 	
 }
 
 h1 {
 	color: white !important;
+	font-family: 'Slabo 27px', serif;
 }
 
 .question {
-	background-color: #999999; 
-	padding-left: 30px;
+background-color:rgba(0, 0, 0, 0.5);; 
+	padding: 30px;
+	margin: 30px;
+	font-family: 'PT Sans', sans-serif;
+
 	color: white;
 	
 }
@@ -33,6 +40,8 @@ p {
 
 #tallyScore {
 	float: none;
+	text-align: center;
+
 	
 }
 
