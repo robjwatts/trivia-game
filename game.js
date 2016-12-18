@@ -2,7 +2,9 @@ $( document ).ready(function() {
     console.log( "ready!" );
 
 
+var amountCorrect = 0; 
 
+var amountWrong = 0;
 //define the starting number of correct answers, incorrect answers, 
 // unanswers questions, and seconds in our text timer
 
@@ -13,12 +15,24 @@ $("#startButton").on("click", function() {
 	countDown(30);
 })
 
-$("#tallyScore").on("click", function() {
-  clearTimeout(countDownId);
-})
+
+
+handleClick();
+
+  
+tallyScore();
 
   var countDownId;
 
+
+function tallyScore() {
+  $("#tallyScore").on("click", function() {
+  clearTimeout(countDownId);
+  $("#correctResults").html(amountCorrect);
+  $("#wrongResults").html(amountWrong);
+  //handle click and tally the score of correct incorrect
+})
+}
 
 
 //this is our timer. still workin' on
@@ -39,28 +53,60 @@ $("#tallyScore").on("click", function() {
     }
 
 function handleClick(){   
-console.log("I'm in the handClick function!");      
-var amountCorrect = 0;          
-for(var i = 1; i <= 5; i++) {
-  var radios = document.getElementsByName('group'+i);
-  for(var j = 0; j < radios.length; j++) {
-    var radio = radios[j];
-    if(radio.value == "correct" && radio.checked) {
+console.log("I'm in the handleClick function!");      
+         
+// for(var i = 1; i <= 5; i++) {
+  var radios = document.getElementById('answer');
+  for(var i = 0; i < radios.length; i++) {
+    var radio = radios[i];
+    if(radio.value == "right" && radio.checked) {
       amountCorrect++;
-        $("#correctResults").html(amountCorrect);
+      console.log(amountCorrect);
+
+     
+          
+
+}
+
+}
+
+}
+
+function handleClickWrong(){   
+console.log("I'm in the handleClickWrong function!");      
+          
+// for(var i = 1; i <= 5; i++) {
+  var radios = document.getElementById('answer');
+  for(var i = 0; i < radios.length; i++) {
+    var radio = radios[i];
+    if(radio.value == "wrong" && radio.checked) {
+      amountWrong++;
+      console.log(amountWrong);
+      
+  }   
           
 }
+console.log(amountCorrect);
+}
      
-    
-    }
 
 
 
-}
 
-}
 
 })
+
+    
+
+
+
+
+
+
+
+
+
+
 
 
   
